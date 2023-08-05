@@ -1,0 +1,191 @@
+/* Add this style for the sliding effect on the right container */
+/* Add this style for the sliding effect on the right container */
+/* Add this style for the sliding effect on the right container */
+.right-container {
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 0; /* Set z-index to make sure the image is visible */
+}
+
+/* Show the signup form initially (by adding the .show class) */
+.signup-form.show {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Set z-index higher than the image to bring the popup form forward */
+}
+
+
+.login_box {
+    position: relative; /* Add this line to make sure the pop-up form stays within the login box */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(#653d84, #332042);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login_box {
+    width: 1050px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+.login_box .left {
+    width: 41%;
+    height: 100%;
+    padding: 25px 25px;
+}
+
+.login_box .right {
+    width: 59%;
+    height: 100%;
+}
+
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+
+.left .top_link {
+    height: 20px;
+}
+
+.left .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+
+.left h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.left input {
+    border: none;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.left {
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+.signup-btn {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 30px; /* Add a gap between the two buttons */
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+.right {
+    background: url("background.png") no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.right .right-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.right-text h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.right-text h5 {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.right .right-inductor {
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    background: #fff0;
+    left: 50%;
+    bottom: 70px;
+    transform: translate(-50%, 0%);
+}
+
+/* Show the signup form and hide the login form when the signup button is pressed */
+.signup-form.visible {
+    display: block;
+}
+
+.right-container.hidden {
+    display: none;
+}
+
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+/* Hide scrollbar for the modal */
+body {
+  overflow: hidden;
+}
+

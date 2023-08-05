@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "alert": "^5.1.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "request": "^2.88.2"
+  }
+}
